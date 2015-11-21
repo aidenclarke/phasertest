@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Phaser Quizzzzzzzz</title>
+    <style>
+      body{
+        background: cyan;
+        margin: 0px;
+        padding: 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <p>Reeces are overrated.</p>
+    <script src="js/phaser.js"></script>
+    <script src="js/boot.js"></script>
+
+    <script>
+      var game = new Phaser.Game(320,568);
+      game.state.add('boot',Flappy.Boot);
+      game.state.start('boot');
+    </script>
+  </body>
+</html>
